@@ -7,50 +7,22 @@ ogm-kitchensink is a [OGM](http://www.hibernate.org/subprojects/ogm.html) demo a
 
 # Prerequisites
 
-* JDK 6
-* [Maven 3](http://maven.apache.org/)
-* [Git](http://git-scm.com/)
+* Install OpenShift command line tools
 
+    $ gem install rhc
 
-## How to use it:
+* Create OpenShift namespace and app (named "ogm" for example)
 
-* Build:
+    $ rhc domain create -l <login_email> -n <namespace>
+    $ rhc app create -a ogm -t jbossas-7
 
-         $ mvn clean package
+* Grab this quickstart codes and make it working for you!
 
-* Deploy:
+    cd ogm
+    git remote add upstream -m master git://github.com/lulinqing/openshift-ogm-quickstart.git
+    git pull -s recursive -X theirs upstream master
+    git push
 
-         $ mvn cargo:run
+* That's it, you can now checkout your GlassFish3 at:
 
-* Running tests (uses Arquillian managed container):
-
-         $ mvn test
-
-## How to deploy on OpenShift Express
-
-* Sign up for OpenShift account at - [https://openshift.redhat.com]([https://openshift.redhat.com])
-* Install OpenShift Express command line tools
-
-        $ gem install rhc
-
-* Create OpenShift domain and app
-
-        $ rhc-create-domain -n <domain>
-        $ rhc-create-app -a <app> -t jbossas-7.0 --nogit
-
-* Add the git repo created by rhc-create-app as remote
-
-        $ git remote add openshift <repo-url>
-
-* Push to Openshift
-
-        $ git push -f openshift master
-
-* Demo site - http://\<app\>-\<domain\>.rhcloud.com
-
-# Links
-
-* [Hibernate OGM](http://www.hibernate.org/subprojects/ogm.html)
-* [AS 7 Command Line Interface](https://community.jboss.org/wiki/CommandLineInterface)
-* [Openshift documentation](https://www.redhat.com/openshift/documents)
-
+    http://ogm-<namespace>.rhcloud.com
