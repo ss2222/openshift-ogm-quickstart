@@ -1,8 +1,4 @@
 #!/bin/bash
-# This is a simple build script, place your post-deploy but pre-start commands
-# in this script.  This script gets executed directly, so it could be python,
-# php, ruby, etc.
-
 set -x
 cd $OPENSHIFT_REPO_DIR/src/main/resources/META-INF
 sed -ig 's/OPENSHIFT_APP_NAME/'$OPENSHIFT_APP_NAME'/g' persistence.xml
