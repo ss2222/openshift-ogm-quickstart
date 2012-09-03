@@ -5,24 +5,22 @@
 ogm-kitchensink is a [OGM](http://www.hibernate.org/subprojects/ogm.html) demo app for [AS 7](http://www.jboss.org/jbossas) based on
 [kitchensink](https://github.com/jbossas/quickstart/tree/master/kitchensink)
 
-# Prerequisites
+## Install OpenShift command line tools
 
-* Install OpenShift command line tools
+    gem install rhc
 
-    $ gem install rhc
+## Create OpenShift namespace and app (named "ogm" for example)
 
-* Create OpenShift namespace and app (named "ogm" for example)
+    rhc domain create -l \<login_email\> -n \<namespace\>
+    rhc app create -a ogm -t jbossas-7
 
-    $ rhc domain create -l <login_email> -n <namespace>
-    $ rhc app create -a ogm -t jbossas-7
-
-* Grab this quickstart codes and make it working for you!
+## Grab this quickstart codes and make it working for you!
 
     cd ogm
     git remote add upstream -m master git://github.com/lulinqing/openshift-ogm-quickstart.git
     git pull -s recursive -X theirs upstream master
     git push
 
-* That's it, you can now checkout your GlassFish3 at:
+## That's it, you can now checkout your GlassFish3 at:
 
-    http://ogm-<namespace>.rhcloud.com
+    http://ogm-\<namespace\>.rhcloud.com
