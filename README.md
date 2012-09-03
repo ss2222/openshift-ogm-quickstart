@@ -22,6 +22,6 @@ ogm-kitchensink is a [OGM](http://www.hibernate.org/subprojects/ogm.html) demo a
     git pull -s recursive -X theirs upstream master
     git push
 
-## That's it, you can now checkout your GlassFish3 at:
+## That's it, you can now checkout your app at:
 
     http://ogm-<namespace>.rhcloud.com
