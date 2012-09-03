@@ -13,6 +13,7 @@ ogm-kitchensink is a [OGM](http://www.hibernate.org/subprojects/ogm.html) demo a
 
     rhc domain create -l <login_email> -n <namespace>
     rhc app create -a ogm -t jbossas-7
+    rhc app cartridge add -a ogm -c mongodb-2.0
 
 ## Grab this quickstart codes and make it working for you!
 
