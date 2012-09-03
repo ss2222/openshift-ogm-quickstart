@@ -31,14 +31,14 @@
     <persistence-unit name="kitchen">
         <provider>org.hibernate.ogm.jpa.HibernateOgmPersistence</provider>
         <properties>
+            <property name="hibernate.search.Rules.directory_provider" value="ram"/>
             <property name="hibernate.ogm.datastore.provider"
                       value="org.hibernate.ogm.datastore.mongodb.impl.MongoDBDatastoreProvider"/>
-            <property name="hibernate.ogm.mongodb.database" value="jbug"/>
-            <property name="hibernate.ogm.mongodb.host" value="127.12.92.129"/>
-            <property name="hibernate.ogm.mongodb.port" value="27017"/>
-            <property name="hibernate.search.Rules.directory_provider" value="ram"/>
-            <property name="hibernate.ogm.mongodb.username" value="admin"/>
-            <property name="hibernate.ogm.mongodb.password" value="RmFI1kPDBHUD"/>
+            <property name="hibernate.ogm.mongodb.database" value="OPENSHIFT_APP_NAME"/>
+            <property name="hibernate.ogm.mongodb.host" value="OPENSHIFT_NOSQL_DB_HOST"/>
+            <property name="hibernate.ogm.mongodb.port" value="OPENSHIFT_NOSQL_DB_PORT"/>
+            <property name="hibernate.ogm.mongodb.username" value="OPENSHIFT_NOSQL_DB_USERNAME"/>
+            <property name="hibernate.ogm.mongodb.password" value="OPENSHIFT_NOSQL_DB_PASSWORD"/>
         </properties>
         <class>org.jboss.as.quickstarts.kitchensink.model.Member</class>
         <class>org.jboss.as.quickstarts.kitchensink.model.ContactDetails</class>
