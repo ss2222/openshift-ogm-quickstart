@@ -11,7 +11,7 @@ ogm-kitchensink is a [OGM](http://www.hibernate.org/subprojects/ogm.html) demo a
 
 ## Create OpenShift namespace and app (named "ogm" for example)
 
-    rhc domain create -l \<login_email\> -n \<namespace\>
+    rhc domain create -l <login_email> -n <namespace>
     rhc app create -a ogm -t jbossas-7
 
 ## Grab this quickstart codes and make it working for you!
@@ -23,4 +23,4 @@ ogm-kitchensink is a [OGM](http://www.hibernate.org/subprojects/ogm.html) demo a
 
 ## That's it, you can now checkout your GlassFish3 at:
 
-    http://ogm-\<namespace\>.rhcloud.com
+    http://ogm-<namespace>.rhcloud.com
