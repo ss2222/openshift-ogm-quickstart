@@ -18,7 +18,7 @@ ogm-kitchensink is a [OGM](http://www.hibernate.org/subprojects/ogm.html) demo a
 ## Grab this quickstart codes and make it working for you!
 
     cd ogm
-    git remote add upstream -m master git://github.com/lulinqing/openshift-ogm-quickstart.git
+    git remote add upstream -m master git://github.com/openshift/openshift-ogm-quickstart.git
     git pull -s recursive -X theirs upstream master
     git push
 
