@@ -35,10 +35,10 @@
             <property name="hibernate.ogm.datastore.provider"
                       value="org.hibernate.ogm.datastore.mongodb.impl.MongoDBDatastoreProvider"/>
             <property name="hibernate.ogm.mongodb.database" value="OPENSHIFT_APP_NAME"/>
-            <property name="hibernate.ogm.mongodb.host" value="OPENSHIFT_NOSQL_DB_HOST"/>
-            <property name="hibernate.ogm.mongodb.port" value="OPENSHIFT_NOSQL_DB_PORT"/>
-            <property name="hibernate.ogm.mongodb.username" value="OPENSHIFT_NOSQL_DB_USERNAME"/>
-            <property name="hibernate.ogm.mongodb.password" value="OPENSHIFT_NOSQL_DB_PASSWORD"/>
+            <property name="hibernate.ogm.mongodb.host" value="OPENSHIFT_MONGODB_DB_HOST"/>
+            <property name="hibernate.ogm.mongodb.port" value="OPENSHIFT_MONGODB_DB_PORT"/>
+            <property name="hibernate.ogm.mongodb.username" value="OPENSHIFT_MONGODB_DB_USERNAME"/>
+            <property name="hibernate.ogm.mongodb.password" value="OPENSHIFT_MONGODB_DB_PASSWORD"/>
         </properties>
         <class>org.jboss.as.quickstarts.kitchensink.model.Member</class>
         <class>org.jboss.as.quickstarts.kitchensink.model.ContactDetails</class>
