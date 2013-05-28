@@ -92,7 +92,7 @@
                     <statement></statement>
                 </datasource>
                 <datasource jndi-name="java:jboss/datasources/MysqlDS" enabled="false" use-java-context="true" pool-name="MysqlDS">
-                    <connection-url>jdbc:mysql://${OPENSHIFT_INTERNAL_IP}:3306/kitchensink</connection-url>
+                    <connection-url>jdbc:mysql://${env.OPENSHIFT_MYSQL_DB_IP}:${env.OPENSHIFT_MYSQL_DB_PORT}/kitchensink</connection-url>
                     <driver>mysql</driver>
                     <security>
                       <user-name>admin</user-name>
@@ -184,10 +184,10 @@
 
     <interfaces>
         <interface name="management">
-            <loopback-address value="${OPENSHIFT_INTERNAL_IP}"/>
+            <loopback-address value="${env.OPENSHIFT_INTERNAL_IP}"/>
         </interface>
         <interface name="public">
-            <loopback-address value="${OPENSHIFT_INTERNAL_IP}"/>
+            <loopback-address value="${env.OPENSHIFT_INTERNAL_IP}"/>
         </interface>
     </interfaces>
 
