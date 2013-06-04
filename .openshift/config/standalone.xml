@@ -184,10 +184,10 @@
 
     <interfaces>
         <interface name="management">
-            <loopback-address value="${env.OPENSHIFT_INTERNAL_IP}"/>
+            <loopback-address value="${env.OPENSHIFT_JBOSSAS_IP}"/>
         </interface>
         <interface name="public">
-            <loopback-address value="${env.OPENSHIFT_INTERNAL_IP}"/>
+            <loopback-address value="${env.OPENSHIFT_JBOSSAS_IP}"/>
         </interface>
     </interfaces>
 
