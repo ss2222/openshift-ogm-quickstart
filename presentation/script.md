@@ -59,7 +59,7 @@
 
 * Explain OpenShift
 * Explain rvm
-* Get the Openshift Express ruby scripts installed
+* Get the OpenShift ruby scripts installed
 
         $ rvm gemset create ogm
         $ rvm gemset use ogm
@@ -86,7 +86,7 @@
 
         $ git remote add openshift <repo-url>
 
-* Push to Openshift
+* Push to OpenShift
 
         $ git push -f openshift master
 
@@ -104,5 +104,5 @@
 # Links
 
 * [AS 7 Command Line Interface](http://www.hibernate.org/subprojects/ogm.html)
-* [Openshift documentation](https://www.redhat.com/openshift/documents)
+* [OpenShift documentation](https://www.redhat.com/openshift/documents)
 
